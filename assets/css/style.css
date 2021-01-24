@@ -1,0 +1,423 @@
+/* styling the header */
+
+header{
+  margin: 20;
+  text-align: center;
+  font-family: monospace ;
+  
+}
+
+/* centre align main heading */
+
+.mainheading{
+  text-align: center;
+  
+  
+}
+
+
+
+/*  set the colour of each page to white and set font color to black */
+
+body {
+    
+    background-image: url("../images/background2.png");
+    /*margin: 0;
+    padding: 0; */
+    font-family: Roboto, sans-serif;
+    color: #000000;
+    
+ }
+ 
+
+ 
+ 
+/*  styling the menu */
+
+.container{
+  
+  border-width:1px 0;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  flex:wrap;
+  width: 100%;
+  background: #ffffff;
+  
+  
+  
+}
+
+nav ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+ul{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+ul li{
+  list-style:  none;
+  padding: 10px 20px;
+  flex: 1 1 0;
+}
+
+ul li a{
+  text-decoration: none;
+  font-size: 2em;
+  color: #262626;
+  position: relative;
+
+}
+
+
+/* hover effects for menu items */
+
+ul li a:before{
+  content: '';
+  width: 0;
+  height: 5px;
+  background: #00bcd4;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: .5s;
+}
+
+ul li:hover a:before{
+  width: 100%;
+}
+
+
+/* settings for flex container welcomebox */
+
+
+.heroimage {
+  
+  background-image: url("../images/radioheader.jpg");
+  height: 80vh;
+  width:100VW;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.welcomecontainer{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.welcome{
+  margin-top: 20px;
+  text-align: left;
+  font-size: 15px;
+ 
+ 
+}
+
+.welcome > p {
+  text-align: left;
+}
+
+.mailinglistheading{
+  color: #ffffff;
+  
+}
+
+.mailinglist{
+  padding: 20px;
+  width: 300px;
+  
+   
+}
+
+
+.playingat{
+  text-align: center;
+}
+
+/* social media links settings */
+
+.list-inline social-links{
+  text-align: center;
+  
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* gallery page styling */
+
+.galleryheading{
+  text-align: center;
+  font-size: 1em;
+}
+
+.responsivegallery{
+  padding: 0 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    height: 100%;
+    height: auto;
+}
+
+.gallery:hover {
+    border: 1px solid #fff;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* biographies page styling */
+
+.biosheading {
+  text-align: center;
+}
+
+.bioscontainer{
+  padding: 0 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.biospicture img{
+  top:50%;
+  left:50%;
+  padding:20px;
+  
+}
+
+.biosdescription{
+  float: right;
+  height:300px;
+  
+}
+
+  
+/* video page styling */
+
+.youtubevideos{
+  
+  flex-direction: column;
+  justify-content:center;
+  
+}
+ 
+
+/* contact page settings for layout */
+
+input[type=text], select, textarea {
+    width: 100%;
+    /*padding: 12px;*/
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contactpage{
+  padding: 0 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.contactheading {
+  font-size: 1em;
+  text-align: center;
+}
+
+.contactform {
+    border-radius: 2px;
+   
+    width: 40%;
+    text-align: center;
+    
+}
+
+.contactus{
+  
+  font-size: 20px;
+  text-align:center;
+  position: relative;
+  
+  
+}
+
+
+ footer{
+   text-align: center;
+   color: #ffffff;
+   position:relative;
+}
+
+/* media queries for home page*/
+
+/* this is the bit that makes the nav bar resize on small screens */
+
+@media all and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-direction: column;
+    display: flex;
+    
+  }
+}
+
+
+@media (max-width:  800px) {
+  .welcomecontainer{
+    /*
+    border: 2px solid #c3c3c3; */
+    flex-direction:column;
+    max-width:90%;
+    flex-wrap:wrap;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width:  800px) {
+  .welcome{
+    flex-direction:column;
+    max-width:90%;
+    flex-wrap:wrap;
+    height: auto;
+    width: auto;
+  }
+}
+
+
+
+@media (max-width:  568px) {
+  .heroimage {
+    background-size: contain;
+    flex-wrap: wrap;
+    flex-basis: 90%;
+    flex-direction:column;
+    text-align: center;
+    display: flex;
+    border: 5px solid #c3c3c3; 
+  }
+}
+
+@media (max-width:  1000px) {
+  .list-inline social-links{
+    flex-direction:column;
+    color:#ffffff;
+  }
+}
+
+/* media settings for gallery page */
+
+
+/* Responsive layout - makes a one column-layout instead of two columns */
+@media screen and (max-width: 800px) {
+  .responsivegallery {
+    
+    flex-direction:column;
+    justify-content:center;
+    height: auto;
+    width: auto;
+    border: 5px solid #c3c3c3;
+  }
+}
+
+/* media settings for biographies page */
+
+@media screen and (max-width: 800px) {
+  .bioscontainer {
+    flex-direction:column;
+    justify-content:center;
+    height: auto;
+    width: auto;
+    border: 5px solid #c3c3c3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .biosdescription {
+    flex-direction:column;
+    justify-content:center;
+    height: auto;
+    width: auto;
+    
+  }
+}
+
+
+
+/* media settings for videos page are the same as for galleries page */
+/* same classes used for videos page as for galleries page */
+
+/*media settings for contact page*/
+
+@media screen and (max-width: 800px) {
+  .contactpage{
+    flex-direction:column;
+    justify-content:center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    
+    
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .contactform{
+    flex-direction:column;
+    justify-content:center; 
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border: 5px solid #c3c3c3;
+  }
+  
+}
