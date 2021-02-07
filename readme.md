@@ -1,18 +1,18 @@
-The band project
-----------------
+Edgware Radio Club prototype
+----------------------------
 
 Introduction
 ------------
-This project is about a 1960s style band called the Monkees.
-I have been asked to build a website of 4 or 5 pages showcasing the Monkees.  
-The primary target audience is the bands fans who want a way to see where the panasonics are performing and to know more about the members of the band.
-I will include a gallery of events, some sample tracks for download and a contact link.
+This is a simple protoype website for Edgware Radio club.  
+The primary target audience are current members of the Radio Club and also people who might
+want to join the radio club in the future, from complete beginners in radio operating to 
+experts.
+
 
 The UX 
 -------
-I started by using the 5 planes framework to design the website and then did an overall conceptual diagram
-and a wireframe for each page.  These can be found in the band planning document accessed through the planning document 
-which can be found in the band planning pdf document contained in this project.
+I used Figma to design the wireframes for each page and these can be found in the UX folder.
+
 User stories: 
 i) The website is used to showcase the band showing some of their highlights.
 ii)  The band members short biographies are available for fans to see.
