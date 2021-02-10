@@ -32,7 +32,7 @@ body {
 
  
  
-/*  styling the menu */
+/*  styling the navbar */
 
 .container{
   
@@ -42,7 +42,7 @@ body {
   padding:0;
   flex:wrap;
   width: 100%;
-  background: #ffffff;
+  background: #1b08c9;
   
   
   
