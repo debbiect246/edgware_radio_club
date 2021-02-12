@@ -31,42 +31,62 @@
                 </ul>
             </nav>  
         </header>
+
         
+        <br><br>
         <div class="contactpage">
-            <div class="contactform">
+            <div class="contactform form-inline">
+                
                 <h2 class="contactheading">Contact form</h2>
                    <form action="contact.html">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-2 col-form label">First Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                    </div>
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                      <option value="UK">UK</option>
-                    </select>
+                    <div class="form-group row">
+                    <label for="lname" class="col-sm-2 col-form label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-           
+                    <div class="form-group row">
+                    <label for="area" class="col-sm-2 col-form label">Area</label>
+                        <div class="col-sm-10">
+                            <select id="area" name="area">
+                                <option value="edgware">Edgware</option>
+                                <option value="harrow">Harrow</option>
+                                <option value="kingsbury">Kingsbury</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>   
+                      
+                    <div class="form-group row">
+                        <label for="nessage" class="col-sm-2 col-form label">Your message</label>
+                            <div class="col-sm-10">
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> 
+                            </div>
+                    </div>
+
+                              
                     <input type="submit" value="Submit">
             
-            
-            
+                                
                    </form>
             </div>
         
             <div class="contactus">
-                <h3>If you would like to write to us</h3>
+                <h3>You are very welcome to visit us once covid restrictions are lifted.</h3>
                 <p>You can find us at</p>
-                <p>5 Clearwater House, Broadwater Boulevard</p>
-                <p> California  6280</p>
-                <p>We are the Monkees!</p>
-                <img src="assets/images/panasonics.jpg" alt="Monkees photo" width="250" height="250">
+                <p>Burnt Oak Community Centre</p>
+                <p>Burnt Oak, Middlesex, HA7</p>
+                <p>You will find us on Thursdays between 8pm and 10pm</p>
+                <img src="assets/images/radio.png" alt="radio operator" width="200" height="200">
             </div>
         
         </div>
