@@ -231,11 +231,11 @@ input[type=submit]:hover {
 }
 
 .contactpage{
-  padding: 0 2px;
-  width: 100%;
+  padding: 0 4px;
+  width: 80%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   
 }
 
@@ -259,7 +259,7 @@ input[type=submit]:hover {
   
   font-size: 15px;
   text-align:center;
-  position: relative;
+  position: right;
   
   
 }
@@ -291,7 +291,7 @@ input[type=submit]:hover {
     /*
     border: 2px solid #c3c3c3; */
     flex-direction:column;
-    max-width:90%;
+    max-width:70%;
     flex-wrap:wrap;
     height: auto;
     width: auto;
@@ -368,7 +368,7 @@ input[type=submit]:hover {
 
 
 
-/* media settings for videos page are the same as for galleries page */
+/* media settings for news page are the same as for galleries page */
 /* same classes used for videos page as for galleries page */
 
 /*media settings for contact page*/
